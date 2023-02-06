@@ -2,9 +2,111 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>ỨNG DỤNG CHUYỂN ĐỔI TIỀN TỆ</title>
 </head>
 <body>
-$END$
+<h3>Amount</h3>
+<input type="text" id="dauvao">
+<h3>From Currency</h3>
+<select name="" id="select1">
+    <option value="a">Việt nam</option>
+    <option value="b">Đô la mỹ</option>
+    <option value="c">Nhân dân tệ</option>
+    <option value="d">Yên nhật</option>
+</select>
+<h3>To Currency</h3>
+<select name="" id="select2">
+    <option value="a">Việt nam</option>
+    <option value="b">Đô la mỹ</option>
+    <option value="c">Nhân dân tệ</option>
+    <option value="d">Yên nhật</option>
+</select>
+<button onclick="convert()">Convert</button>
+<h3>Kết quả</h3>
+<input type="text" id="ketqua">
+<script>
+    function convert() {
+        let giatrivao = document.getElementById('dauvao').value;
+        let select1 = document.getElementById('select1').value;
+        let select2 = document.getElementById('select2').value;
+        let  ketqua;
+
+        //--VIỆT NAM ĐỒNG-->
+        if (select1 === select2 ) {
+            ketqua = giatrivao*1
+        }
+        document.getElementById('ketqua').value = ketqua;
+
+        if (select1 === 'a' && select2 === 'b') {
+           ketqua = giatrivao*0.000043
+        }
+        document.getElementById('ketqua').value = ketqua;
+
+        if (select1 === 'a' && select2 === 'c') {
+            ketqua = giatrivao*0.00029
+        }
+        document.getElementById('ketqua').value = ketqua;
+
+        if (select1 === 'a' && select2 === 'd') {
+            ketqua = giatrivao*0.0056
+        }
+        document.getElementById('ketqua').value = ketqua;
+
+//--ĐÔ LA MỸ-->
+
+        if (select1 === 'b' && select2 === 'a') {
+            ketqua = giatrivao*24000
+        }
+        document.getElementById('ketqua').value = ketqua;
+
+        if (select1 === 'b' && select2 === 'c') {
+            ketqua = giatrivao*6.78
+        }
+        document.getElementById('ketqua').value = ketqua;
+
+        if (select1 === 'b' && select2 === 'd') {
+            ketqua = giatrivao*132.09
+        }
+        document.getElementById('ketqua').value = ketqua;
+
+
+//--NHÂN DÂN TỆ-->
+
+        if (select1 === 'c' && select2 === 'a') {
+            ketqua = giatrivao*3462
+        }
+        document.getElementById('ketqua').value = ketqua;
+
+        if (select1 === 'c' && select2 === 'b') {
+            ketqua = giatrivao*0.15
+        }
+        document.getElementById('ketqua').value = ketqua;
+
+        if (select1 === 'c' && select2 === 'd') {
+            ketqua = giatrivao*19.47
+        }
+        document.getElementById('ketqua').value = ketqua;
+
+
+        //--YÊN NHẬT-->
+
+        if (select1 === 'd' && select2 === 'a') {
+            ketqua = giatrivao*117.84
+        }
+        document.getElementById('ketqua').value = ketqua;
+
+        if (select1 === 'd' && select2 === 'b') {
+            ketqua = giatrivao*0.0076
+        }
+        document.getElementById('ketqua').value = ketqua;
+
+        if (select1 === 'd' && select2 === 'c') {
+            ketqua = giatrivao*0.051
+        }
+        document.getElementById('ketqua').value = ketqua;
+    }
+</script>
 </body>
+
+
 </html>

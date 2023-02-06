@@ -2,9 +2,58 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+
 </body>
+!--Chương trình Tính điểm trung bình-->
+TÍNH ĐIỂM TRUNG BÌNH
+<div>
+    <script>
+        let diemLy = parseInt(prompt("Nhập điểm Lý"))
+        let diemHoa = parseInt(prompt("Nhập điểm Hóa"))
+        let diemsinh = parseInt(prompt("Nhập điểm Sinh"))
+        let diemTrungbinh = (diemLy + diemHoa + diemsinh) / 3
+        let tong = diemLy + diemHoa + diemsinh
+        document.write("Điểm Trung Bình: " + diemTrungbinh);
+        document.write("Điểm Tổng: " + tong);
+    </script>
+</div>
+
+
+<!--Chương trình chuyển đổi Nhiệt độ-->
+CHUYỂN ĐỔI NHIỆT ĐỘ
+<div>
+    <script>
+        let doC = parseInt(prompt("nhập độ C"));
+        let doF = doC * 9/5 + 32;
+        document.write( "Độ F: " + doF);
+    </script>
+</div>
+
+
+<!--Chương trình tính diện tích Hình tròn-->
+DIỆN TÍCH HÌNH TRÒN
+<div>
+    <script>
+        let r = parseInt(prompt("Nhập bán kính hình tròn"));
+        let pi = 3.14;
+        let s = r ** 2 * pi;
+        document.write("Diện tích hình tròn "+ s);
+    </script>
+</div>
+
+
+
+<!--Chương trình tính Chu vi hình tròn-->
+TÍNH CHU VI HÌNH TRÒN
+<div>
+    <script>
+        let rR = parseInt(prompt("Nhập bán kính hình tròn"));
+        let pPi = 3.14;
+        let cC = rR * 2 * pPi;
+        document.write("Chu vi hình tròn " + cC)
+    </script>
+</div>
 </html>

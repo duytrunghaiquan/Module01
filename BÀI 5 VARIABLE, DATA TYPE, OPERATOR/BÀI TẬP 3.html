@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="nhap1">
+<input type="text" id="nhap2">
+<button onclick="cong()">Cộng</button>
+<button onclick="tru()">trừ</button>
+<button onclick="nhan()">Nhân</button>
+<button onclick="chia()">Chia</button>
+<input type="text" id="ketqua">
+<script>
+
+    function cong() {
+        let input1 = document.getElementById('nhap1').value;
+        let input2 = document.getElementById('nhap2').value;
+        let cong1 = parseFloat(input1) + parseFloat(input2)
+        document.getElementById('ketqua').value = cong1;
+    }
+    function tru() {
+        let input1 = document.getElementById('nhap1').value;
+        let input2 = document.getElementById('nhap2').value;
+        let tru1 = parseFloat(input1) - parseFloat(input2)
+        document.getElementById('ketqua').value = tru1;
+    }
+    function nhan() {
+        let input1 = document.getElementById('nhap1').value;
+        let input2 = document.getElementById('nhap2').value;
+        let nhan1 = parseFloat(input1) * parseFloat(input2)
+        document.getElementById('ketqua').value = nhan1;
+    }
+    function chia() {
+        let input1 = document.getElementById('nhap1').value;
+        let input2 = document.getElementById('nhap2').value;
+        let chia1 = parseFloat(input1) / parseFloat(input2)
+        document.getElementById('ketqua').value = chia1;
+    }
+</script>
+
+</body>
+</html>
